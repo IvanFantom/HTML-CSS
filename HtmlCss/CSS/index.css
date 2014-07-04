@@ -1,34 +1,4 @@
-﻿@font-face {
-    font-family: 'source_sans_proregular';
-    src: url("../Fonts/sourcesanspro-regular-webfont.eot");
-    src: url('../Fonts/sourcesanspro-regular-webfont.eot?#iefix') format('embedded-opentype'), url('../Fonts/sourcesanspro-regular-webfont.woff') format('woff'), url('../Fonts/sourcesanspro-regular-webfont.ttf') format('truetype'), url('../Fonts/sourcesanspro-regular-webfont.svg#source_sans_proregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'FontAwesome';
-    src: url('../Fonts/fontawesome-webfont.eot?v=4.1.0');
-    src: url('../Fonts/fontawesome-webfont.eot?#iefix&v=4.1.0') format('embedded-opentype'), url('../Fonts/fontawesome-webfont.woff?v=4.1.0') format('woff'), url('../Fonts/fontawesome-webfont.ttf?v=4.1.0') format('truetype'), url('../Fonts/fontawesome-webfont.svg?v=4.1.0#fontawesomeregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'source_sans_prolight';
-    src: url('../Fonts/sourcesanspro-light-webfont.eot');
-    src: url('../Fonts/sourcesanspro-light-webfont.eot?#iefix') format('embedded-opentype'), url('../Fonts/sourcesanspro-light-webfont.woff') format('woff'), url('../Fonts/sourcesanspro-light-webfont.ttf') format('truetype'), url('../Fonts/sourcesanspro-light-webfont.svg#source_sans_prolight') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'source_sans_problack';
-    src: url('../Fonts/sourcesanspro-black-webfont.eot');
-    src: url('../Fonts/sourcesanspro-black-webfont.eot?#iefix') format('embedded-opentype'), url('../Fonts/sourcesanspro-black-webfont.woff') format('woff'), url('../Fonts/sourcesanspro-black-webfont.ttf') format('truetype'), url('../Fonts/sourcesanspro-black-webfont.svg#source_sans_problack') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
+﻿@import url("font-faces.css");
 
 * {
     margin: 0px;
@@ -56,71 +26,168 @@ header {
     background: #ffffff;
 }
 
-    header div.logo-area {
-        /*float: left;*/
-        position: relative;
+.logo-area {
+    position: relative;
+}
+
+.site-name {
+    position: absolute;
+    left: 66px;
+    top: 24px;
+    font: 19px source_sans_problack;
+}
+
+header h1 a {
+    display: block;
+    color: #9e8e92;
+}
+
+header h1.site-name:before {
+    position: absolute;
+    left: -43px;
+    top: 4px;
+    font: 31px FontAwesome;
+    content: "\f0a2";
+    color: #fdbd1f;
+}
+
+.caption {
+    position: absolute;
+    left: 66px;
+    top: 41px;
+    font: 15px source_sans_prolight;
+    color: #ada0a3;
+}
+
+header nav {
+    float: right;
+    font: 13px source_sans_proregular;
+}
+
+    header nav ul {
+        list-style: none;
     }
 
-    header h1.site-name {
-        position: absolute;
-        left: 66px;
-        top: 24px;
-        font: 19px source_sans_problack;
-    }
-
-    header h1 a {
-        display: block;
-        color: #9e8e92;
-    }
-
-    header h1.site-name:before {
-        position: absolute;
-        left: -43px;
-        top: 4px;
-        font: 31px FontAwesome;
-        content: "\f0a2";
-        color: #fdbd1f;
-    }
-
-    header span.caption {
-        position: absolute;
-        left: 66px;
-        top: 41px;
-        font: 15px source_sans_prolight;
-        color: #ada0a3;
-    }
-
-    header nav {
-        float: right;
-        font: 13px source_sans_proregular;
-    }
-
-        header nav ul {
-            list-style: none;
+        header nav ul li {
+            float: left;
+            text-transform: uppercase;
         }
 
-            header nav ul li {
-                float: left;
-                text-transform: uppercase;
+            header nav ul li a {
+                color: #9e8e92;
+                line-height: 85px;
+                padding: 0px 30px;
+                display: block;
             }
 
-                header nav ul li a {
-                    color: #9e8e92;
-                    line-height: 85px;
-                    padding: 0px 30px;
-                    display: block;
+                header nav ul li a:hover {
+                    color: #ffffff;
+                    background: #fdbd1f;
                 }
 
-                    header nav ul li a:hover {
-                        color: #ffffff;
-                        background: #fdbd1f;
-                    }
-
-footer {
-    height: 110px;
-    background: #00bfff;
+.banner {
+    position: relative;
+    background: url(../Images/bg-banner.png);
+    height: 440px;
 }
+
+.container {
+    position: absolute;
+    margin: auto;
+    top: 0; left: 0; bottom: 0; right: 0; 
+    text-align: center;
+}
+
+.banner-container {
+    width: 50%;
+    height: 17%;
+}
+
+    .banner-container h2 {
+        padding: 9px;
+        font: 31px source_sans_problack;
+        color: #ffffff;
+        background: #ab6f80;
+        display: inline-block;
+        letter-spacing: 2px;
+    }
+
+.main-title {
+    position: relative;
+    background: #fdbd1f;
+    height: 272px;
+}
+
+.main-title-container {
+    width: 50%;
+    height: 63%;
+}
+
+.main-title h3 {
+    font: 24px source_sans_problack;
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+.main-title p {
+    font: 20px source_sans_prolight;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.btn {
+    font: 20px source_sans_problack;
+    color: #fdbd1f;
+    background: #ab6f80;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    border: 0px;
+    padding: 10px 20px;
+    margin: 0px 10px;
+}
+
+.row1 {
+    background: #ffffff;
+    height: 305px;
+}
+
+.row2 {
+    background: #ab6f80;
+    height: 350px;
+}
+
+.row3 {
+    background: #ffffff;
+    height: 546px;
+}
+
+footer { /*TODO: deal with copyright overflow when scaling*/
+    position: relative;
+    height: 110px;
+    background: #f0f0f0;
+}
+
+.footer-container {
+    height: 25%;
+    font: 15px source_sans_proregular;
+    color: #a49599;
+}
+
+    /*footer p {
+        font: 15px source_sans_proregular;
+        color: #a49599;
+        text-align: center;
+        line-height: 110px;
+    }*/
 
 a {
     text-decoration: none;
 }
+
+
+/*.banner-container {
+    position: absolute;
+    top: 50%; left: 0; right: 0;
+    text-align: center;
+    margin-top: -37px;
+}*/
