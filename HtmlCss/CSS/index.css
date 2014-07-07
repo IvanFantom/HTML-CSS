@@ -23,7 +23,7 @@ body {
 }
 
 header {
-    height: 85px;
+    height: 80px;
     border-top: solid 5px #fdbd1f;
     background: #ffffff;
 }
@@ -77,8 +77,8 @@ header nav {
 
             header nav ul li a {
                 color: #9e8e92;
-                line-height: 85px;
-                padding: 0px 30px;
+                line-height: 80px;
+                padding: 0px 24px;
                 display: block;
             }
 
@@ -187,7 +187,6 @@ header nav {
     -o-border-radius: 8px;
     -ms-border-radius: 8px;
     border-radius: 8px;
-    background-size: cover;
 }
 
 footer {
