@@ -8,17 +8,23 @@
     -ms-border-radius: 3px;
     border-radius: 3px;
     border: 0px;
-    padding: 10px 14px;
+    padding: 15px 22px;
     margin: 0px 10px;
+    cursor:pointer;
     behavior: url("ie-css3.htc");
+}
+.btn:hover {
+    background: #00ffff;
 }
 .btn-light {
     font-size: 16px;
     color: #ffffff;
     background: #fdbd1f;
+    padding: 10px 14px;
 }
 .btn-white {
     font-size: 16px;
     color: #ab6f80;
     background: #ffffff;
+    padding: 10px 14px;
 }
