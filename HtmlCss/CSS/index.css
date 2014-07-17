@@ -16,7 +16,7 @@ a {
     text-decoration: none;
 }
 
-#page-align {
+.page-align {
     width: 1170px;
     margin: 75px auto;
     -moz-box-shadow: 0px 0px 24px #000000;
