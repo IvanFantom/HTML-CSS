@@ -177,11 +177,16 @@ header nav {
     position: relative;
     background: #ffffff;
     height: 546px;
+
+    display: flex;
+    flex-direction: row;
 }
 .content3 {
-    width: 700px;
-    height: 430px;
     text-align: center;
+    margin: auto;
+}
+.description3 {
+    width: 700px;
 }
 .slider {
     width: 598px;
@@ -227,9 +232,6 @@ footer {
 
 /*///////////////////////////////////helpers*/
 .center {
-    /*margin: 0 auto;
-    display: block;*/
-
     position: absolute;
     top: 0; bottom: 0; left: 0; right: 0;
     margin: auto;
